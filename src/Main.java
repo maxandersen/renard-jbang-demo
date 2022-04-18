@@ -7,11 +7,11 @@
 //JAVAC_OPTIONS -parameters
 
 //webjars
-//DEPS org.webjars:bootstrap:5.1.3
-//DEPS org.webjars.npm:bootstrap-icons:1.7.0
 //DEPS io.quarkus:quarkus-webjars-locator
+//DEPS org.webjars.npm:htmx.org:1.7.0
 
-//FILES templates/Application/index.html=../resources/Application/index.html
+//TODO: add globbing support in //FILES https://github.com/jbangdev/jbang/issues/1338
+//FILES templates/Main/index.qute.html=Main/index.qute.html
 
 package rest;
 
@@ -21,7 +21,7 @@ import io.quarkus.qute.CheckedTemplate;
 import io.quarkus.qute.TemplateInstance;
 import io.quarkiverse.renarde.Controller;
 
-public class Application extends Controller {
+public class Main extends Controller {
 
     @CheckedTemplate
     static class Templates {
