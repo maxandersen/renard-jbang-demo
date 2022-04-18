@@ -7,5 +7,5 @@ All just experiemental/random musings at the moment.
 To run it:
 
 ```
-jbang src
+jbang src/Main.java
 ```
